@@ -1,0 +1,71 @@
+.about-wrapper {
+    padding-top: 45px;
+
+    font-family: 'Raleway', sans-serif;
+}
+.about-tile {
+    h2 {
+        font-size: 80px;
+        font-weight: 500;
+    }
+}
+.about-content_wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+.about-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.about-subtitle {
+    width: 50%;
+    h3{
+        font-size: 30px;
+        font-weight: 600;
+    }
+}
+.about-text {
+    width: 50%;
+    h4 {
+        font-size: 30px;
+    }
+    ul { 
+        margin-top: 10px;
+        li {
+        padding: 0;
+        position: relative;
+      
+        display: inline-block;
+        list-style: none; /* Убрать стандартный маркер */
+        margin-left: 20px;
+
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+      ul { li::before {
+        position: absolute;
+        left: -1.1225em;
+        top: 0em;
+      
+        display: inline-block; 
+        
+        font-size: 1em;
+        color: #fefefe; /* цвет маркера */
+        content: "\2014"; /* Unicode символ - дефис */
+      }
+    }
+    ol {
+        margin-top: 10px;
+        li {
+            margin-left: 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 400; 
+        }
+    }
+}

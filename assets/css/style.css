@@ -1,0 +1,336 @@
+@charset "UTF-8";
+/* Reset and base styles  */
+@import url("https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  /*outline: none;*/
+}
+
+a:focus,
+a:active {
+  /* outline: none;*/
+}
+
+/* Links */
+a {
+  color: #fff;
+}
+
+a, a:link, a:visited {
+  /* color: inherit; */
+  text-decoration: none;
+  /* display: inline-block; */
+}
+
+a:hover {
+  /* color: inherit; */
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+body {
+  font-family: "Ballet", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  background: #3D798D;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  width: 100%;
+  padding-top: 15px;
+}
+
+.header-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  width: 234px;
+}
+.header-logo a {
+  max-width: 100%;
+}
+
+.header-nav {
+  font-family: "Montserrat", sans-serif;
+  width: 50%;
+}
+.header-nav nav ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.header-nav nav ul li a {
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.1s;
+}
+.header-nav nav ul li a:hover {
+  border-bottom: 3px solid #FFB804;
+  transition: 0.1s;
+}
+
+.header-button {
+  width: 217px;
+}
+.header-button a {
+  background: #FFB804;
+  padding: 15px 26px;
+  border-radius: 90px;
+  font-size: 18px;
+  font-weight: 800;
+  transition: 0.2s;
+}
+.header-button a:hover {
+  background: #3D798D;
+  color: #FFB804;
+  border: 1px solid #FFB804;
+  padding: 13px 24px;
+  transition: 0.2s;
+}
+
+.home {
+  width: 100%;
+  z-index: 0;
+}
+
+.home-wrapper {
+  width: 100%;
+  padding-top: 60px;
+}
+
+.home-greetings {
+  width: 100%;
+}
+
+.home-subtitle h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.home-title {
+  position: relative;
+  width: 100%;
+  margin-top: 25px;
+  text-transform: uppercase;
+}
+.home-title h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 109px;
+  font-weight: 600;
+}
+
+.mstyle {
+  position: absolute;
+  top: -140px;
+  right: 35px;
+  font-family: "Ballet", cursive;
+  font-size: 250px;
+}
+.mstyle span {
+  font-family: "Raleway", sans-serif;
+  font-size: 109px;
+  font-weight: 600;
+  position: relative;
+  margin-left: -60px;
+}
+
+.home-info {
+  position: relative;
+}
+.home-info img {
+  position: relative;
+  z-index: -1;
+  max-width: 100%;
+}
+.home-info .home-info_wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.home-info .home-info_wrapper .container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+.home-info .home-info_wrapper .info__this-title p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+}
+.home-info .home-info_wrapper .home-info__this {
+  display: flex;
+  justify-content: space-between;
+}
+.home-info .home-info_wrapper .info__this-content ul {
+  display: flex;
+  flex-direction: column;
+}
+.home-info .home-info_wrapper .info__this-content ul li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.about-wrapper {
+  padding-top: 45px;
+  font-family: "Raleway", sans-serif;
+}
+
+.about-tile h2 {
+  font-size: 80px;
+  font-weight: 500;
+}
+
+.about-content_wrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.about-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-subtitle {
+  width: 50%;
+}
+.about-subtitle h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.about-text {
+  width: 50%;
+}
+.about-text h4 {
+  font-size: 30px;
+}
+.about-text ul {
+  margin-top: 10px;
+}
+.about-text ul li {
+  padding: 0;
+  position: relative;
+  display: inline-block;
+  list-style: none; /* Убрать стандартный маркер */
+  margin-left: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+.about-text ul li::before {
+  position: absolute;
+  left: -1.1225em;
+  top: 0em;
+  display: inline-block;
+  font-size: 1em;
+  color: #fefefe; /* цвет маркера */
+  content: "—"; /* Unicode символ - дефис */
+}
+.about-text ol {
+  margin-top: 10px;
+}
+.about-text ol li {
+  margin-left: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}/*# sourceMappingURL=style.css.map */
